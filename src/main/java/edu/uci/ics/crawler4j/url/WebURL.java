@@ -194,7 +194,7 @@ public class WebURL implements Serializable {
 
     @Override
     public int hashCode() {
-        return url.hashCode();
+        return (url == null) ? 0 : url.hashCode();
     }
 
     @Override
